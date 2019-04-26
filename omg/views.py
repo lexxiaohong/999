@@ -103,7 +103,8 @@ def testfile(request):
     return render(request,'fileform_page.html',{'fileform':fileform})
 
 
-
+def testgest(request):
+    return HttpResponse('testheng')
 
 
 
