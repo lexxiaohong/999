@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Show Formset</h1>
+<form method="post">
+    {% csrf_token %}
+    {% for row in hengformset %}
+    {{ row.id }}
+    {{ hengformset.management_form }}
+
+    <div>{{ row }}</div>
+        <hr>
+    {% endfor %}
+
+</form>
+
+</body>
+</html>
